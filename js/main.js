@@ -1,1 +1,3 @@
-alert('working')
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", alert("cliked"));
