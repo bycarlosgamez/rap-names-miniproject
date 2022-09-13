@@ -3,6 +3,7 @@
 const express = require("express");
 //create a variable to hold expresss, and let us use all of express methods
 const app = express();
+//cors is a npm package (module) which enables controlled access to resources located outside of a given domain, like local file requests... we need to install cors => npm install cors --save
 const cors = require("cors");
 //create a PORT varible to save a number so we can listen
 const PORT = 8000;
@@ -30,7 +31,7 @@ const rappers = {
 //gets requests let us hear a request and respond with dara (html files, objects aka json, etc)
 app.get("/", (request, response) => {
   //.sendFile lets us send a file as a response
-  //__dirname lets us find a file from whatever our server.js file is located as a base location
+  //__dirname lets us find a file from whatever our server.js file is located as a current directory
   response.sendFile(__dirname + "/index.html");
 });
 
