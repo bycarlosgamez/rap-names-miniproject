@@ -4,7 +4,7 @@ const express = require("express");
 //create a variable to hold expresss, and let us use all of express methods
 const app = express();
 //cors is a npm package (module) which enables controlled access to resources located outside of a given domain, like local file requests... we need to install cors => npm install cors --save
-//cors let hosted servers hae access to local files (main.js)
+//cors let hosted servers have access to local files (main.js)
 const cors = require("cors");
 //create a PORT varible to save a number so we can listen
 const PORT = 8000;
